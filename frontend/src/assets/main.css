@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family:
+    sOliverCaseTT,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Nimbus Sans L,
+    Liberation Sans,
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

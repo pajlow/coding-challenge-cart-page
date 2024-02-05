@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  backend:
+    container_name: backend
+    image: backend:1.0.0
+    build:
+      context: .
+      target: development
+      dockerfile: ./Dockerfile
+    command: npm run start:dev --workspace backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - /node_modules
+      - ./package.json:/package.json
+      - ./package-lock.json:/package-lock.json
+      - ./backend:/backend
+      - ./backend/database-dev.sqlite:/backend/database-dev.sqlite
+    restart: unless-stopped
+    networks:
+      - develnet
+networks:
+  develnet:

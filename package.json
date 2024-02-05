@@ -1,0 +1,11 @@
+{
+  "name": "coding-challenge-cart-page",
+  "version": "0.0.1",
+  "description": "Coding challenge for a cart page",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "author": "Pajlow",
+  "license": "UNLICENSED"
+}
